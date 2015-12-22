@@ -1,0 +1,22 @@
+{
+  "name": "ged-store",
+  "version": "1.0.0",
+  "description": "Versatile data store for quick JS front-end apps",
+  "main": "src/ged-store.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dvodonnell@github.com/dvocreative/ged-store.git"
+  },
+  "keywords": [
+    "datastore"
+  ],
+  "author": "Dan O'Donnell <dan@dvoc.ca> (http://dvoc.ca)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvocreative/ged-store/issues"
+  },
+  "homepage": "https://github.com/dvocreative/ged-store#readme"
+}
