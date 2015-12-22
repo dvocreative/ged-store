@@ -1,6 +1,6 @@
 {
   "name": "ged-store",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Versatile data store for quick JS front-end apps",
   "main": "src/ged-store.js",
   "scripts": {
