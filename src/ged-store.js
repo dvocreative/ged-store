@@ -179,6 +179,10 @@ Future versions will address this, for now I don't care.
             return this._store.get.apply(this._store, [key]);
         },
         set : function(key, val) {
+            if (val === undefined || typeof val === 'undefined') {
+                val = key;
+                key = '';
+            }
             key = this._refineKey(key);
             this._store.set.apply(this._store, [key, val]);
         },
