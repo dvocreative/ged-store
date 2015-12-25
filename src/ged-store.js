@@ -70,11 +70,13 @@ Future versions will address this, for now I don't care.
 
             if (Array.isArray(val)) {
                 this._storage[key] = '!ARR';
+                //TODO remove all existing children
                 for (var i = 0; i < val.length; i++) {
                     this.add(key, val[i]);
                 }
             } else if (typeof val === 'object' && typeof val !== 'null') {
                 this._storage[key] = '!OBJ';
+                //TODO remove all existing children
                 for (objKey in val) {
                     if (val.hasOwnProperty(objKey)) {
                         this.set(key + '/' + objKey, val[objKey]);
