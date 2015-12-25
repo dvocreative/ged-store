@@ -187,6 +187,10 @@ Future versions will address this, for now I don't care.
             this._store.set.apply(this._store, [key, val]);
         },
         subscribe : function(key, cb) {
+            if (cb === undefined || typeof cb === 'undefined') {
+                cb = key;
+                key = '';
+            }
             key = this._refineKey(key);
             this._store.subscribe.apply(this._store, [key, cb]);
         },
